@@ -11,7 +11,7 @@ with open("scaler.pkl", "rb") as file:
     scaler = pickle.load(file)
 
 # Load dataset for country encoding reference
-df = pd.read_excel("/kaggle/input/customer-segmentation-dataset/Online Retail.xlsx")
+df = pd.read_excel("OnlineRetail.xlsx")
 
 # Encode Country dynamically
 encoder = LabelEncoder()
